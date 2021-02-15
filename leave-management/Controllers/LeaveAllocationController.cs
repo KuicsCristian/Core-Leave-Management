@@ -37,7 +37,7 @@ namespace leave_management.Controllers
         {
             var leavetypes = _leaverepo.FindAll().ToList();
             var mappedLeaveTypes = _mapper.Map<List<LeaveType>, List<LeaveTypeVM>>(leavetypes);
-            var model = new CreateLeaveAllocationVm
+            var model = new CreateLeaveAllocationVM
             {
                 LeaveTypes = mappedLeaveTypes,
                 NumberUpdated = 0

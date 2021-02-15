@@ -16,7 +16,7 @@ namespace leave_management.Models
         public int LeaveTypeId { get; set; }
 
     }
-    public class CreateLeaveAllocationVm
+    public class CreateLeaveAllocationVM
     {
         public int NumberUpdated { get; set; }
         public List<LeaveTypeVM> LeaveTypes { get; set; }
